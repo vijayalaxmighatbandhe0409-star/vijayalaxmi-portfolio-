@@ -1,0 +1,101 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0b1020;
+  color: white;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 22px 8%;
+  background: #11182b;
+}
+
+header h2 {
+  color: #a78bfa;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+a {
+  color: #c4b5fd;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+section {
+  padding: 70px 10%;
+  min-height: 200px;
+}
+
+#home {
+  min-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: linear-gradient(135deg, #0b1020, #24204a);
+}
+
+#home h1 {
+  font-size: clamp(30px, 5vw, 52px);
+  color: #a78bfa;
+  margin: 10px 0;
+}
+
+#home a {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #7c3aed;
+  border-radius: 8px;
+  color: white;
+}
+
+section h2 {
+  color: #a78bfa;
+  margin-bottom: 20px;
+}
+
+#projects h3 {
+  margin-top: 20px;
+  color: #c4b5fd;
+}
+
+#about, #projects {
+  background: #11182b;
+}
+
+#skills, #contact {
+  background: #0b1020;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    justify-content: center;
+  }
+}
